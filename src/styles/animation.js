@@ -8,3 +8,9 @@ export const rotateImage = keyframes`
     transform: rotate(360deg);
   }
 `
+
+export const headingBlink = keyframes`
+  50% {
+    opacity: 0;
+  }
+`

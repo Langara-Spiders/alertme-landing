@@ -2,8 +2,9 @@ import * as React from "react"
 
 import {
   Box,
+  HeadingText,
   ImageBox,
-  MainWrapper,
+  MainWrapper
 } from "../styles/home"
 
 import { StaticImage } from "gatsby-plugin-image"
@@ -19,12 +20,13 @@ const IndexPage = () => {
             }}
             width={200}
             src="../images/icon.png"
-            alt="A dinosaur" />
+            alt="AlertMe Logo" />
         </ImageBox>
+        <HeadingText>AlertMe</HeadingText>
         <p style={{
           textAlign: "center",
-          fontSize: "40px"
-        }}>Coming Soon...</p>
+          fontSize: "20px"
+        }}>Launching Soon...</p>
       </Box>
     </MainWrapper>
   )
