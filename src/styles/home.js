@@ -7,10 +7,10 @@ import styled from "styled-components"
 
 export const MainWrapper = styled.main`
   display: flex;
-  height: 100vh;
-  width: 100vw;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0;
+  padding: 0;
 `
 
 export const Box = styled.div``

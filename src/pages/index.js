@@ -7,27 +7,15 @@ import {
   MainWrapper
 } from "../styles/home"
 
+import TeamSection from '../components/TeamSection';
+import ContactUs from '../components/ContactSection';
+
 import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
   return (
     <MainWrapper>
-      <Box>
-        <ImageBox>
-          <StaticImage
-            style={{
-              borderRadius: "50%"
-            }}
-            width={200}
-            src="../images/icon.png"
-            alt="AlertMe Logo" />
-        </ImageBox>
-        <HeadingText>AlertMe</HeadingText>
-        <p style={{
-          textAlign: "center",
-          fontSize: "20px"
-        }}>Launching Soon...</p>
-      </Box>
+    <ContactUs />
     </MainWrapper>
   )
 }
