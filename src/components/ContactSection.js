@@ -60,6 +60,14 @@ const PositionedStaticImage = styled.div`
   position: absolute;
   width: 50px; /* Adjust size as needed */
   height: 50px; /* Adjust size as needed */
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const ButtonWrapper = styled.div`
+  text-align: center;
 `;
 
 const Button = styled.button`
@@ -122,12 +130,16 @@ const ContactUs = () => {
         <Label htmlFor="message">Message</Label>
         <TextArea id="message" name="message" placeholder="Type here...." required></TextArea>
 
-        <Button type="submit">Send</Button>
+        <ButtonWrapper>
+          <Button type="submit">Send</Button>
+        </ButtonWrapper>
       </Form>
     </ContactSection>
   );
 };
 
 export default ContactUs;
+
+
 
 
