@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
+import styled from 'styled-components';
 
 // Import images statically
 const teamMembers = [
@@ -56,6 +56,7 @@ const teamMembers = [
 
 const SectionWrapper = styled.section`
   background: #fcefe3;
+  margin-top: 10rem;
 `;
 
 const TeamSectionWrapper = styled.section`

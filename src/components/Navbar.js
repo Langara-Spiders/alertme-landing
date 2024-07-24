@@ -11,7 +11,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  margin: auto;
+  margin: 10px auto;
   border-radius: 100px;
   background-color: white;
   padding: 10px 20px;
@@ -20,7 +20,8 @@ const Nav = styled.nav`
   @media (max-width: 768px) {
     width: 100%;
     padding:0;
-    margin: 0;
+    margin: 10px 15px 0 15px;
+    // margin-top: 10px;
   }
 `;
 

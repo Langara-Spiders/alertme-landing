@@ -4,17 +4,18 @@ import styled from 'styled-components';
 
 export const WhiteButton = styled.button`
   font-size: 20px;
-  padding: 10px 20px;
+  padding: 10px 40px;
   border-radius: 30px;
-  margin: 10px;
+  margin: 20px;
   text-align: center;
   border: none;
-  cursor: pointer;
   background: #FFFFFF;
   position: relative;
   overflow: hidden;
   color: transparent; /* Make text transparent */
   z-index: 0;
+  white-space: nowrap;
+  cursor:none;
 
   &::before {
     content: attr(data-text); 
@@ -31,12 +32,30 @@ export const WhiteButton = styled.button`
     pointer-events: none;
   }
 
-  &:hover {
-    opacity: 0.8;
-  }
 `;
 
 export const BrownButton = styled.button`
+  background: #2B1200;
+  color:#FFFFFF;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 0;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+`;
+export const BrownButton2 = styled.button`
   background: #2B1200;
   color:#FFFFFF;
   font-size: 20px;
@@ -50,10 +69,6 @@ export const BrownButton = styled.button`
 
   &:hover {
     opacity: 0.8;
-  }
-
-  @media (max-width: 768px) {
-    display: none;
   }
 
 `;
@@ -81,21 +96,22 @@ export const HeadingText = styled.h1`
   font-weight: "bold";
   text-align: center;
   color: #2B1200;
+  font-family: 'Public Sans', sans-serif;
 
 
   @media (max-width: 768px) {
-    font-size: 60px;
+    font-size: 50px;
   }
   
 `;
 
 
 export const SubHeadingText = styled.h2`
-  font-size: 64px;
+  font-size: 50px;
   color:"#2B1200';
 
   @media (max-width: 768px) {
-    font-size: 40px;
+    font-size: 30px;
   }
 `;    
   
