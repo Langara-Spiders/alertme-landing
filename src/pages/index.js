@@ -1,25 +1,20 @@
-import * as React from "react"
+import * as React from "react";
 
-import {
-  Box,
-  HeadingText,
-  ImageBox,
-  MainWrapper
-} from "../styles/home"
-
-import TeamSection from '../components/TeamSection';
 import ContactUs from '../components/ContactSection';
-
-import { StaticImage } from "gatsby-plugin-image"
+import {
+  MainWrapper
+} from "../styles/home";
+import Navbar from '../components/Navbar';
 
 const IndexPage = () => {
   return (
     <MainWrapper>
-    <ContactUs />
+      <Navbar style={{alignItems:"center"}}/>
+      <ContactUs />
     </MainWrapper>
-  )
+  );
 }
 
-export default IndexPage
+export default IndexPage;
 
-export const Head = () => <title>About | AlertMe</title>
+export const Head = () => <title>About | AlertMe</title>;

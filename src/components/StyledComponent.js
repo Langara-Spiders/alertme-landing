@@ -52,6 +52,10 @@ export const BrownButton = styled.button`
     opacity: 0.8;
   }
 
+  @media (max-width: 768px) {
+    display: none;
+  }
+
 `;
 
 export const YellowButton = styled.button`
