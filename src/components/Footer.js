@@ -1,12 +1,10 @@
-// src/components/Footer.js
-
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
+import { YellowButton } from './StyledComponent'; // Ensure correct path
 
-
-const FooterWrapper  = styled.footer`
-background-color: #fcefe3;
+const FooterWrapper = styled.footer`
+  background-color: #fcefe3;
 `;
 
 const FooterContainer = styled.footer`
@@ -21,48 +19,37 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
+  flex-direction: row; /* Default layout: row */
   justify-content: space-between;
   align-items: center;
-`;
 
-const Button = styled.a`
-  background: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-  width: 225px;
-  height: 40px;
-  cursor: pointer;
-  border-radius: var(--radius-100, 100px);
-  background: var(--Color-Primary-primart-850, #FF7714);
-
-  &:hover {
-    background: #555;
+  @media (max-width: 768px) {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center;
   }
 `;
 
 const Footer = () => {
   return (
     <FooterWrapper>
-        <FooterContainer>
+      <FooterContainer>
         <Container>
-            <StaticImage
+          <StaticImage
             src="../images/logo.png"
             alt="Logo"
             placeholder="blurred"
             layout="fixed"
             width={100}
-            />
-            {/* <Button>
+          />
+          <YellowButton>
             Download Proposal
-            </Button> */}
+          </YellowButton>
         </Container>
-        </FooterContainer>
+      </FooterContainer>
     </FooterWrapper>
   );
 };
 
 export default Footer;
+
 
