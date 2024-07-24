@@ -7,6 +7,7 @@ import {
 } from "../styles/home";
 import Navbar from '../components/Navbar';
 import { StaticImage } from "gatsby-plugin-image"
+import TeamSection from '../components/TeamSection';
 
 const IndexPage = () => {
   return (
