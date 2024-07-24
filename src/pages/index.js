@@ -11,11 +11,14 @@ import TeamSection from '../components/TeamSection';
 import ContactUs from '../components/ContactSection';
 
 import { StaticImage } from "gatsby-plugin-image"
+import Footer from "../components/Footer";
 
 const IndexPage = () => {
   return (
     <MainWrapper>
-    <ContactUs />
+      <TeamSection />
+      <ContactUs />
+      <Footer />
     </MainWrapper>
   )
 }
