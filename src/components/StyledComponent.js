@@ -109,7 +109,8 @@ export const HeadingText = styled.h1`
 
 export const SubHeadingText = styled.h2`
   font-size: 50px;
-  color:"#2B1200';
+  color:'#2B1200';
+  font-family: 'Public Sans', sans-serif;
 
   @media (max-width: 768px) {
     font-size: 30px;

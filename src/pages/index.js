@@ -7,6 +7,7 @@ import {
   MainWrapper
 } from "../styles/home";
 import Navbar from '../components/Navbar';
+import NearbyHazardSection from "../components/NearbyHazardSection";
 import { StaticImage } from "gatsby-plugin-image"
 import TeamSection from '../components/TeamSection';
 import styled from 'styled-components';
@@ -30,6 +31,7 @@ const IndexPage = () => {
         <Navbar style={{ alignItems: "center" }} />
         <HeroSection />
       </GradientBackground>
+      <NearbyHazardSection />
       <TeamSection />
       <ContactUs />
       <Footer /> 
