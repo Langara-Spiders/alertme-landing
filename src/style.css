@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Public Sans";
+  src: url("./assets/fonts/public-sans.ttf") format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  vertical-align: baseline;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Public Sans', Arial, sans-serif;
+}

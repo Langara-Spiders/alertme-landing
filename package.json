@@ -9,15 +9,19 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
+    "transform-lang": "formatjs extract 'src/sections/**/*.{js,ts}*' --ignore='**/*.d.ts' --out-file en.json && formatjs compile en.json --ast --out-file src/locales/en.json",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/public-sans": "^5.0.18",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "babel-plugin-react-intl": "^8.2.25",
+    "babel-plugin-react-intl-auto": "^3.3.0",
     "babel-plugin-styled-components": "^2.1.4",
     "gatsby": "^5.13.5",
     "gatsby-plugin-google-gtag": "^5.13.1",
@@ -31,9 +35,14 @@
     "gatsby-transformer-sharp": "^5.13.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^5.2.1",
+    "react-intl": "^6.6.8",
     "react-responsive": "^10.0.0",
     "react-svg": "^16.1.34",
     "styled-components": "^6.1.12"
+  },
+  "devDependencies": {
+    "@formatjs/cli": "^6.2.12"
   }
 }
