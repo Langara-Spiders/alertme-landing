@@ -1,5 +1,6 @@
 const lightPalette = {
   navbarBg: "#FFFFFF",
+  navbarTxt: "#000000",
   badgeBg: "#FFF3EA",
   featureBg: "#FFFFFF",
   sectionBg: "#FFF3EA",

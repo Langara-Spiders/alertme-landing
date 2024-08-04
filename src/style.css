@@ -19,3 +19,76 @@ html, body {
   box-sizing: border-box;
   font-family: 'Public Sans', Arial, sans-serif;
 }
+
+.nav-brand {
+  font-size: 1.5em;
+}
+
+.nav-toggle {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-toggle .bar1, .nav-toggle .bar2 {
+  display: none;
+  background-color: black;
+  margin-top: 10px;
+  height: 2px;
+  width: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle .bar1, .nav-toggle .bar2 {
+    display: block;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-toggle.open .bar1 {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .nav-toggle.open .bar2 {
+    transform: translateY(-5px) rotate(-45deg);
+  }
+}

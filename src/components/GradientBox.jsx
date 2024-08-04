@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const GradientBox = styled.div`
   background: linear-gradient(180deg, ${palette.secondary} 0%, ${palette.primary} 100%);
+  position: relative;
   width: 100%;
   min-height: 100vh;
   position: relative;

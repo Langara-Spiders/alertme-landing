@@ -1,3 +1,4 @@
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import BadgeTitle from "../components/BadgeTitle";
 import { FormattedMessage } from "react-intl";
 import MemberBox from "../components/MemberBox";
@@ -45,12 +46,16 @@ const PaddedBox = styled.div`
 
 const TeamSection = () => {
   return (
-    <Section>
-      <BadgeTitle>
-        <FormattedMessage
-          id="ourTeam"
-          defaultMessage="Our Team" />
-      </BadgeTitle>
+    <Section id="team">
+      <AnimationOnScroll
+        animateOnce
+        animateIn="animate__swing">
+        <BadgeTitle>
+          <FormattedMessage
+            id="ourTeam"
+            defaultMessage="Our Team" />
+        </BadgeTitle>
+      </AnimationOnScroll>
       <SubHeading>
         <FormattedMessage
           id="talentsBehind"

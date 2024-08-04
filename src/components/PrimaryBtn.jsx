@@ -17,6 +17,7 @@ const Button = styled.button`
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
+  z-index: 10;
 `;
 
 const PrimaryBtn = ({children, bgColor}) => {

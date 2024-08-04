@@ -35,7 +35,7 @@ const ContactSection = () => {
   const intl = useIntl();
 
   return (
-    <Section>
+    <Section id="contact">
       <SubHeading>Wanna Talk?</SubHeading>
       <Form>
         <FormInput
