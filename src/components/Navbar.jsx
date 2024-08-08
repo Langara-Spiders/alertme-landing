@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Fragment } from "react";
+
 import { StaticImage } from "gatsby-plugin-image";
 import palette from "../theme";
 import styled from "styled-components";
@@ -35,45 +36,65 @@ const NavListItemLink = styled.a`
 const handleClick = () => {
 	const navLinks = document.getElementById('navLinks');
 	const navToggle = document.getElementById('navToggle');
+	const overlay = document.getElementById('overlay');
 	navLinks.classList.toggle('show');
+	overlay.classList.toggle('show');
 	navToggle.classList.toggle('open');
 }
 
 const Navbar = () => {
   return (
-    <Nav className="navbar">
-			<div className="nav-brand">
-				<StaticImage
-					src="../assets/images/logo.png"
-					alt="AlertMe Logo"
-					style={{
-						width: "34px"
-					}}
-					placeholder="none"
-					objectFit="contain" />
-			</div>
+		<Fragment>
 			<div
-				onClick={handleClick}
-				className="nav-toggle"
-				id="navToggle">
-				<div className="bar1"></div>
-				<div className="bar2"></div>
-			</div>
-			<NavList className="nav-links" id="navLinks">
-				<NavListItem>
-					<NavListItemLink href="#getStarted">Get Started</NavListItemLink>
-				</NavListItem>
-				<NavListItem>
-					<NavListItemLink href="#features">Features</NavListItemLink>
-				</NavListItem>
-				<NavListItem>
-					<NavListItemLink href="#team">Team</NavListItemLink>
-				</NavListItem>
-				<NavListItem>
-					<NavListItemLink href="#contact">Contact</NavListItemLink>
-				</NavListItem>
-			</NavList>
-    </Nav>
+				id="overlay"
+				className="menu-overlay"
+				onClick={handleClick}></div>
+			<Nav className="navbar">
+				<div className="nav-brand">
+					<a href="#">
+						<StaticImage
+							src="../assets/images/logo.png"
+							alt="AlertMe Logo"
+							style={{
+								width: "34px"
+							}}
+							placeholder="none"
+							objectFit="contain" />
+					</a>
+				</div>
+				<div
+					onClick={handleClick}
+					className="nav-toggle"
+					id="navToggle">
+					<div className="nav-toggle-wrap">
+						<div className="bar1"></div>
+						<div className="bar2"></div>
+					</div>
+				</div>
+				<NavList className="nav-links" id="navLinks">
+					<NavListItem>
+						<NavListItemLink
+							onClick={handleClick}
+							href="#getStarted">Get Started</NavListItemLink>
+					</NavListItem>
+					<NavListItem>
+						<NavListItemLink
+							onClick={handleClick}
+							href="#features">Features</NavListItemLink>
+					</NavListItem>
+					<NavListItem>
+						<NavListItemLink
+							onClick={handleClick}
+							href="#team">Team</NavListItemLink>
+					</NavListItem>
+					<NavListItem>
+						<NavListItemLink
+							onClick={handleClick}
+							href="#contact">Contact</NavListItemLink>
+					</NavListItem>
+				</NavList>
+			</Nav>
+		</Fragment>
   );
 };
 

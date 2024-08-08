@@ -1,10 +1,10 @@
-import MediaQuery, { useMediaQuery } from 'react-responsive'
 import devices, { breakpoints } from "../components/devices";
 
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import BadgeTitle from "../components/BadgeTitle";
 import { FormattedMessage } from "react-intl";
 import GradientBox from "../components/GradientBox";
+import MediaQuery from 'react-responsive'
 import PrimaryBtn from "../components/PrimaryBtn";
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image"
@@ -12,9 +12,6 @@ import palette from "../theme";
 import styled from "styled-components";
 
 const GettingStartedSection = () => {
-  const isDesktop = useMediaQuery({
-    query: `(${devices.md})`
-  })
 
   return (
     <Section id="getStarted">
