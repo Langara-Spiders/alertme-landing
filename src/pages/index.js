@@ -90,4 +90,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>About | AlertMe</title>;
+export const Head = () => <title>AlertMe</title>;
