@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `alertme-landing`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: "AlertMe - Your Safety Companion",
+    siteUrl: "https://alertme.tech"
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -10,12 +10,10 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
-      resolve: `gatsby-plugin-nprogress`,
+      resolve: "gatsby-plugin-nprogress",
       options: {
-        // Setting a color is optional.
-        color: `tomato`,
-        // Disable the loading spinner.
-        showSpinner: false,
+        color: "#FF4D00",
+        showSpinner: true,
       },
     },
     {
