@@ -33,12 +33,16 @@ const Input = styled.textarea`
 const FormTextArea = ({
   label,
   placeholder,
-  marginTop
+  marginTop,
+  name,
+  required,
 }) => {
   return (
     <Box marginTop={marginTop}>
       <Label>{label}</Label>
       <Input
+        name={name}
+        required={required}
         rows={4}
         placeholder={placeholder}></Input>
     </Box>

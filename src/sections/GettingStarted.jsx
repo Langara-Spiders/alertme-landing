@@ -12,7 +12,6 @@ import palette from "../theme";
 import styled from "styled-components";
 
 const GettingStartedSection = () => {
-
   return (
     <Section id="getStarted">
       <GradientBox>

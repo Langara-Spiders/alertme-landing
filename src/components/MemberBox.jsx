@@ -4,7 +4,10 @@ import styled from "styled-components";
 
 const PaddedBox = styled.div`
   margin-top: 5rem;
-  padding-inline: 10px;
+  flex: 1;
+  min-width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
 `;
 
 const ImageBox = styled.div`

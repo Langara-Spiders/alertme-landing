@@ -4,6 +4,7 @@ import FormInput from "../components/FormInput";
 import FormSubmitBtn from "../components/FormSubmitBtn";
 import FormTextArea from "../components/FormTextArea";
 import React from "react";
+import devices from "../components/devices";
 import palette from "../theme";
 import styled from "styled-components";
 
@@ -29,6 +30,10 @@ const SubHeading = styled.h2`
 const Form = styled.form`
   padding: 0;
   margin: 0;
+
+  @media only screen and (${devices.lg}) {
+    width: 700px;
+  }
 `;
 
 const ContactSection = () => {
@@ -37,32 +42,41 @@ const ContactSection = () => {
   return (
     <Section id="contact">
       <SubHeading>Wanna Talk?</SubHeading>
-      <Form>
+      <Form
+        method="POST"
+        action="https://formspree.io/f/mqazblrb">
         <FormInput
-          label={<FormattedMessage id="form.name" defaultMessage="Name" />}
+          label={<FormattedMessage id="form.name" defaultMessage="Name *" />}
           placeholder={
             intl.formatMessage({
               id:"form.name.placeholder",
               defaultMessage:"Enter your name"
             })
-          } />
+          }
+          name="Name"
+          required />
         <FormInput
-          label={<FormattedMessage id="form.email" defaultMessage="Email" />}
+          label={<FormattedMessage id="form.email" defaultMessage="Email *" />}
           placeholder={
             intl.formatMessage({
               id:"form.email.placeholder",
               defaultMessage:"Enter your Email"
             })
-          } />
+          }
+          name="Email"
+          type="email"
+          required />
         <FormTextArea
-          label={<FormattedMessage id="form.message" defaultMessage="Message" />}
+          label={<FormattedMessage id="form.message" defaultMessage="Message *" />}
           placeholder={
             intl.formatMessage({
               id:"form.message.placeholder",
               defaultMessage:"Type here..."
             })
-          } />
-        <FormSubmitBtn>Send</FormSubmitBtn>
+          }
+          name="Message"
+          required />
+        <FormSubmitBtn type="submit">Send</FormSubmitBtn>
       </Form>
     </Section>
   );

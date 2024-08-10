@@ -1,4 +1,5 @@
 import React from "react";
+import devices from "./devices";
 import palette from "../theme";
 import styled from "styled-components";
 
@@ -19,6 +20,10 @@ const Button = styled.button`
   font-weight: 600;
   line-height: 130%;
   width: 100%;
+
+  @media only screen and (${devices.lg}) {
+    width: 300px;
+  }
 `;
 
 const FormSubmitBtn = ({children}) => {

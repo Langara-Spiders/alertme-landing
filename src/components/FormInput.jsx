@@ -33,11 +33,18 @@ const FormInput = ({
   label,
   placeholder,
   marginTop,
+  name,
+  type,
+  required,
 }) => {
   return (
     <Box marginTop={marginTop}>
       <Label>{label}</Label>
-      <Input placeholder={placeholder} />
+      <Input
+        name={name}
+        type={type ?? "text"}
+        required={required}
+        placeholder={placeholder} />
     </Box>
   );
 };

@@ -40,8 +40,11 @@ const MainDes = styled.h3`
   margin: 0;
 `;
 
-const PaddedBox = styled.div`
+const GridBox = styled.div`
   padding-inline: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(317px, 1fr));
+  gap: 10px;
 `
 
 const TeamSection = () => {
@@ -68,13 +71,13 @@ const TeamSection = () => {
         />
       </MainDes>
 
-      <PaddedBox>
+      <GridBox>
         {
           teamList.map((teamMember, idx) => (
             <MemberBox key={idx} {...teamMember} />
           ))
         }
-      </PaddedBox>
+      </GridBox>
     </Section>
   );
 };

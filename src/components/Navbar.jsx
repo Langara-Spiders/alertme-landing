@@ -1,8 +1,10 @@
 import React, { Fragment } from "react";
 
 import { StaticImage } from "gatsby-plugin-image";
+import devices from "./devices";
 import palette from "../theme";
 import styled from "styled-components";
+import { useMediaQuery } from "react-responsive";
 
 const Nav = styled.nav`
 	background-color: ${palette.navbarBg};
@@ -19,9 +21,12 @@ const Nav = styled.nav`
 	justify-content: space-between;
   align-items: center;
 	box-shadow: 0 4px 3px 0 rgba( 0, 0, 0, 0.1 );
+
+	@media only screen and (${devices.lg}) {
+    width: calc(100% - 320px);
+		height: 70px;
+  }
 `;
-
-
 
 const NavList = styled.ul`
 `;
@@ -33,16 +38,22 @@ const NavListItemLink = styled.a`
 	color: ${palette.navbarTxt} !important;
 `;
 
-const handleClick = () => {
-	const navLinks = document.getElementById('navLinks');
-	const navToggle = document.getElementById('navToggle');
-	const overlay = document.getElementById('overlay');
-	navLinks.classList.toggle('show');
-	overlay.classList.toggle('show');
-	navToggle.classList.toggle('open');
-}
-
 const Navbar = () => {
+	const isLargeDevice = useMediaQuery({
+    query: `(${devices.md})`
+  })
+
+	const handleClick = () => {
+		if (!isLargeDevice) {
+			const navLinks = document.getElementById('navLinks');
+			const navToggle = document.getElementById('navToggle');
+			const overlay = document.getElementById('overlay');
+			navLinks.classList.toggle('show');
+			overlay.classList.toggle('show');
+			navToggle.classList.toggle('open');
+		}
+	}
+
   return (
 		<Fragment>
 			<div

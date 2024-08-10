@@ -1,5 +1,4 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image"
 import palette from "../theme";
 import styled from "styled-components";
 
