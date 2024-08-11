@@ -1,0 +1,152 @@
+{
+  "designationFE": {
+    "defaultMessage": "FrontEnd Developer"
+  },
+  "designationFullStack": {
+    "defaultMessage": "Full Stack Developer"
+  },
+  "designationLeadDes": {
+    "defaultMessage": "Lead/Product Designer"
+  },
+  "designationLeadDev": {
+    "defaultMessage": "Lead Dev/Full Stack Developer"
+  },
+  "designationPE": {
+    "defaultMessage": "Product Designer"
+  },
+  "designationPM": {
+    "defaultMessage": "PM/Full Stack Developer"
+  },
+  "downloadProposalBtn": {
+    "defaultMessage": "Download Proposal"
+  },
+  "feat1-des": {
+    "defaultMessage": "Monitor reported incidents in real-time, track their status, and see updates on resolved issues."
+  },
+  "feat1-heading": {
+    "defaultMessage": "Incident reporting"
+  },
+  "feat2-heading": {
+    "defaultMessage": "On-going Incidents"
+  },
+  "feat3-heading": {
+    "defaultMessage": "On-going Incidents"
+  },
+  "feat4-heading": {
+    "defaultMessage": "Incident Tracking"
+  },
+  "feat5-des": {
+    "defaultMessage": "Earn rewards for reporting hazards and contributing to community safety. Your efforts make a difference!"
+  },
+  "feat5-heading": {
+    "defaultMessage": "Rewards"
+  },
+  "feat6-des": {
+    "defaultMessage": "Set virtual boundaries to alert users when they approach or enter hazardous areas."
+  },
+  "feat6-heading": {
+    "defaultMessage": "Geofencing"
+  },
+  "feat7-des": {
+    "defaultMessage": "Submit and manage hazard reports with GPS, descriptions, and photos."
+  },
+  "feat7-heading": {
+    "defaultMessage": "Incident reporting"
+  },
+  "feat8-des": {
+    "defaultMessage": "Approve or reject hazard reports, and take necessary safety measures."
+  },
+  "feat8-heading": {
+    "defaultMessage": "Initiate Actions"
+  },
+  "featuresForCivilians": {
+    "defaultMessage": "Features For Civilians"
+  },
+  "form.email": {
+    "defaultMessage": "Email *"
+  },
+  "form.email.placeholder": {
+    "defaultMessage": "Enter your Email"
+  },
+  "form.message": {
+    "defaultMessage": "Message *"
+  },
+  "form.message.placeholder": {
+    "defaultMessage": "Type here..."
+  },
+  "form.name": {
+    "defaultMessage": "Name *"
+  },
+  "form.name.placeholder": {
+    "defaultMessage": "Enter your name"
+  },
+  "form.send": {
+    "defaultMessage": "Send"
+  },
+  "gettingStarted": {
+    "defaultMessage": "Getting Started"
+  },
+  "mainDes": {
+    "defaultMessage": "users of nearby construction and {road} {hazards}, and allowing them to report {issues} and workers to confirm alerts, {enhancing} city {safety}."
+  },
+  "mainDes.highlightEnhancing": {
+    "defaultMessage": "enhancing"
+  },
+  "mainDes.highlightHazards": {
+    "defaultMessage": "hazards"
+  },
+  "mainDes.highlightIssues": {
+    "defaultMessage": "issues"
+  },
+  "mainDes.highlightRoad": {
+    "defaultMessage": "road"
+  },
+  "mainDes.highlightSafety": {
+    "defaultMessage": "safety"
+  },
+  "ourTeam": {
+    "defaultMessage": "Our Team"
+  },
+  "subDes": {
+    "defaultMessage": "{alertme} for Construction {workers} to manage and respond to site {hazards} {hazardIcon} in real-time."
+  },
+  "subDes.alertme": {
+    "defaultMessage": "AlertMe"
+  },
+  "subDes.alerts": {
+    "defaultMessage": "alerts"
+  },
+  "subDes.hazards": {
+    "defaultMessage": "Hazards"
+  },
+  "subDes.receive": {
+    "defaultMessage": "Recieve"
+  },
+  "subDes.safe": {
+    "defaultMessage": "safe."
+  },
+  "subDes.stay": {
+    "defaultMessage": "stay"
+  },
+  "subDes.workers": {
+    "defaultMessage": "Workers"
+  },
+  "subHeadingCivilian": {
+    "defaultMessage": "Get alerts, report hazards, stay safe."
+  },
+  "subHeadingWorker": {
+    "defaultMessage": "Post, Manage, and Resolve Hazards with Real-Time Updates"
+  },
+  "tagine": {
+    "defaultMessage": "AlertMe Your Safety Companion"
+  },
+  "talentsBehind": {
+    "defaultMessage": "Talents Behind AlertMe"
+  },
+  "teamDesApp": {
+    "defaultMessage": "Meet the team that created this app in just 12 weeks! From initial design to final development, we built it from scratch and can't wait to share our creation with you."
+  },
+  "workersFeatures": {
+    "defaultMessage": "Features for Construction Workers"
+  }
+}

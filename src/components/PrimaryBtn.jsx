@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from "react";
 import palette from "../theme";
 import styled from "styled-components";
@@ -18,13 +19,21 @@ const Button = styled.button`
   font-weight: 600;
   line-height: 130%;
   z-index: 10;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: .2s;
+  }
 `;
 
 const PrimaryBtn = ({children, bgColor}) => {
   return (
-    <Button bgColor={bgColor}>
-      {children}
-    </Button>
+    <a target="_blank" href="/AlertMe_Proposal.pdf">
+      <Button bgColor={bgColor}>
+        {children}
+      </Button>
+    </a>
   )
 };
 

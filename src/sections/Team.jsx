@@ -4,6 +4,7 @@ import { FormattedMessage } from "react-intl";
 import MemberBox from "../components/MemberBox";
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import devices from '../components/devices';
 import palette from "../theme";
 import styled from "styled-components";
 
@@ -41,10 +42,18 @@ const MainDes = styled.h3`
 `;
 
 const GridBox = styled.div`
-  padding-inline: 10px;
+  padding-inline: 16px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(317px, 1fr));
   gap: 10px;
+
+  @media only screen and (${devices.xs}) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (${devices.lg}) {
+    padding-inline: 160px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 `
 
 const TeamSection = () => {
@@ -89,6 +98,7 @@ const teamList = [
     imageComponent: (
       <StaticImage
         src="../assets/images/team/sandeep.png"
+        placeholder="../assets/images/placeholder/team/sandeep.png"
         alt="Team Member Image"
         style={{
           width: "100%",
@@ -106,6 +116,7 @@ const teamList = [
     imageComponent: (
       <StaticImage
         src="../assets/images/team/bryan.png"
+        placeholder="../assets/images/placeholder/team/bryan.png"
         alt="Team Member Image"
         style={{
           width: "100%",
@@ -123,6 +134,7 @@ const teamList = [
     imageComponent: (
       <StaticImage
         src="../assets/images/team/karthik.png"
+        placeholder="../assets/images/placeholder/team/karthik.png"
         alt="Team Member Image"
         style={{
           width: "100%",
@@ -140,6 +152,7 @@ const teamList = [
     imageComponent: (
       <StaticImage
         src="../assets/images/team/simran.png"
+        placeholder="../assets/images/placeholder/team/simran.png"
         alt="Team Member Image"
         style={{
           width: "100%",
@@ -157,6 +170,7 @@ const teamList = [
     imageComponent: (
       <StaticImage
         src="../assets/images/team/nandan.png"
+        placeholder="../assets/images/placeholder/team/nandan.png"
         alt="Team Member Image"
         style={{
           width: "100%",
@@ -174,6 +188,7 @@ const teamList = [
     imageComponent: (
       <StaticImage
         src="../assets/images/team/nikhil.png"
+        placeholder="../assets/images/placeholder/team/nikhil.png"
         alt="Team Member Image"
         style={{
           width: "100%",
@@ -191,6 +206,7 @@ const teamList = [
     imageComponent: (
       <StaticImage
         src="../assets/images/team/rushik.png"
+        placeholder="../assets/images/placeholder/team/rushik.png"
         alt="Team Member Image"
         style={{
           width: "100%",
@@ -208,6 +224,7 @@ const teamList = [
     imageComponent: (
       <StaticImage
         src="../assets/images/team/palak.png"
+        placeholder="../assets/images/placeholder/team/palak.png"
         alt="Team Member Image"
         style={{
           width: "100%",
@@ -225,6 +242,7 @@ const teamList = [
     imageComponent: (
       <StaticImage
         src="../assets/images/team/rahul.png"
+        placeholder="../assets/images/placeholder/team/rahul.png"
         alt="Team Member Image"
         style={{
           width: "100%",

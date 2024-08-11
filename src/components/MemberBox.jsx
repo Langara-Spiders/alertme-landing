@@ -11,7 +11,6 @@ const PaddedBox = styled.div`
 `;
 
 const ImageBox = styled.div`
-
 `;
 
 const NameTxt = styled.p`
