@@ -45,8 +45,9 @@ const GridBox = styled.div`
   padding-inline: 16px;
   display: grid;
   gap: 10px;
+  grid-template-columns: 1fr;
 
-  @media only screen and (${devices.xs}) {
+  @media only screen and (${devices.md}) {
     grid-template-columns: 1fr 1fr;
   }
 
