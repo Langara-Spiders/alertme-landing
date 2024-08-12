@@ -19,6 +19,7 @@ const lightPalette = {
   footerTxt: "#FFDABF",
   primaryBtn1: "#2B1200",
   primaryBtn2: "#FF7714",
+  linkTxt: "#FF7714",
 }
 
 const palette = lightPalette;

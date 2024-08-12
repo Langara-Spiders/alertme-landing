@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 
 import { StaticImage } from "gatsby-plugin-image";
 import devices from "./devices";
@@ -13,14 +13,16 @@ const Nav = styled.nav`
 	left: 50%;
 	position: fixed;
   z-index: 999;
-	top: 16px;
+	top: ${({showNavbar}) => showNavbar ?  "16px" : "-100px"};
+	transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: ${({showNavbar}) => (showNavbar ? 1 : 0)};
 	transform: translateX(-50%);
 	width: calc(100% - 32px);
   padding: 10px 16px;
 	display: flex;
 	justify-content: space-between;
   align-items: center;
-	box-shadow: 0 4px 3px 0 rgba( 0, 0, 0, 0.1 );
+	box-shadow: 0 4px 40px 0 rgba( 0, 0, 0, 0.1 );
 
 	@media only screen and (${devices.lg}) {
     width: calc(100% - 320px);
@@ -39,6 +41,25 @@ const NavListItemLink = styled.a`
 `;
 
 const Navbar = () => {
+	const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const handleScroll = () => {
+    if (window.scrollY > lastScrollY) {
+      setShowNavbar(false);
+    } else {
+      setShowNavbar(true);
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
+
 	const isLargeDevice = useMediaQuery({
     query: `(${devices.md})`
   })
@@ -60,7 +81,9 @@ const Navbar = () => {
 				id="overlay"
 				className="menu-overlay"
 				onClick={handleClick}></div>
-			<Nav className="navbar">
+			<Nav
+				className="navbar"
+				showNavbar={showNavbar}>
 				<div className="nav-brand">
 					<a href="#">
 						<StaticImage

@@ -1,9 +1,10 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import palette from "../theme";
 import styled from "styled-components";
 
 const PaddedBox = styled.div`
-  margin-top: 5rem;
+  margin-top: 3rem;
   flex: 1;
   min-width: 30%;
   padding: 20px;
@@ -38,11 +39,9 @@ const MemberBox = ({
   imageComponent,
   name,
   designation,
-  linkedInLink,
-  portfolioLink,
-  githubLink,
-  behanceLink
+  linkedinURL,
 }) => {
+
   return (
     <PaddedBox>
       <ImageBox>
@@ -54,6 +53,30 @@ const MemberBox = ({
       <DesgTxt>
         {designation}
       </DesgTxt>
+      <a
+        href={`https://www.linkedin.com/in${linkedinURL}`}
+        target="_blank"
+        style={{
+          display: "inline-flex",
+          color: palette.linkTxt,
+          marginTop: "-20px",
+          alignItems: "center",
+          justifyContent: "center",
+          cursor: "pointer",
+          width: "100%",
+          textDecoration: "none"
+        }}>
+        <StaticImage
+          src="../assets/images/linkedin-icon.png"
+          alt="LinkedIn Logo"
+          style={{
+            width: "38px",
+            height: "38px",
+          }}
+          placeholder="none"
+          objectFit="contain" />
+        &nbsp;{linkedinURL}
+      </a>
     </PaddedBox>
   );
 };

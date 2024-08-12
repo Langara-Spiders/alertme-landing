@@ -84,7 +84,11 @@ const TeamSection = () => {
       <GridBox>
         {
           teamList.map((teamMember, idx) => (
-            <MemberBox key={idx} {...teamMember} />
+            <AnimationOnScroll
+              animateOnce
+              animateIn="animate__zoomIn">
+              <MemberBox key={idx} {...teamMember} />
+            </AnimationOnScroll>
           ))
         }
       </GridBox>
@@ -111,7 +115,8 @@ const teamList = [
       <FormattedMessage
         id="designationPM"
         defaultMessage="PM/Full Stack Developer" />
-    )
+    ),
+    linkedinURL: "/sandeep-guggilla",
   },
   {
     imageComponent: (
@@ -128,8 +133,9 @@ const teamList = [
     designation: (
       <FormattedMessage
         id="designationLeadDev"
-        defaultMessage="Lead Dev/Full Stack Developer" />
-    )
+        defaultMessage="Lead/Full Stack Developer" />
+    ),
+    linkedinURL: "/bryan-caldeira",
   },
   {
     imageComponent: (
@@ -147,7 +153,8 @@ const teamList = [
       <FormattedMessage
         id="designationFE"
         defaultMessage="FrontEnd Developer" />
-    )
+    ),
+    linkedinURL: "/karthik2506",
   },
   {
     imageComponent: (
@@ -165,7 +172,8 @@ const teamList = [
       <FormattedMessage
         id="designationFE"
         defaultMessage="FrontEnd Developer" />
-    )
+    ),
+    linkedinURL: "/simrandeepkaurd",
   },
   {
     imageComponent: (
@@ -183,7 +191,8 @@ const teamList = [
       <FormattedMessage
         id="designationFullStack"
         defaultMessage="Full Stack Developer" />
-    )
+    ),
+    linkedinURL: "/nandan-nishad",
   },
   {
     imageComponent: (
@@ -201,7 +210,8 @@ const teamList = [
       <FormattedMessage
         id="designationLeadDes"
         defaultMessage="Lead/Product Designer" />
-    )
+    ),
+    linkedinURL: "/nikhil-kanda",
   },
   {
     imageComponent: (
@@ -219,7 +229,8 @@ const teamList = [
       <FormattedMessage
         id="designationPE"
         defaultMessage="Product Designer" />
-    )
+    ),
+    linkedinURL: "/rushikpatel20",
   },
   {
     imageComponent: (
@@ -237,7 +248,8 @@ const teamList = [
       <FormattedMessage
         id="designationPE"
         defaultMessage="Product Designer" />
-    )
+    ),
+    linkedinURL: "/palak-goyal-",
   },
   {
     imageComponent: (
@@ -255,6 +267,7 @@ const teamList = [
       <FormattedMessage
         id="designationPE"
         defaultMessage="Product Designer" />
-    )
+    ),
+    linkedinURL: "/rahul-rathan-kota",
   },
 ]

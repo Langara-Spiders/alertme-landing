@@ -120,6 +120,13 @@ const FeatureSection = () => {
             }} />
         </SubHeadingInner>
       </AnimationOnScroll>
+      <AnimationOnScroll
+        style={{
+          display: "inline-block"
+        }}
+        delay="5"
+        animateOnce
+        animateIn="animate__zoomIn">
         <StaticImage
           src="../assets/images/notifications-feature.png"
           alt="Notifications Feature Image"
@@ -131,6 +138,7 @@ const FeatureSection = () => {
           }}
           placeholder="none"
           objectFit="contain" />
+      </AnimationOnScroll>
       <ColourBox>
         <div
           style={{
@@ -173,16 +181,20 @@ const FeatureSection = () => {
               textAlign: "right",
               paddingInline: "160px"
             }}>
-            <StaticImage
-              src="../assets/images/worker-lg.png"
-              alt="Worker Avatar"
-              style={{
-                width: "calc(100% - 20%)",
-                marginTop: "80px",
-                marginBottom: "80px",
-              }}
-              placeholder="none"
-              objectFit="contain" />
+            <AnimationOnScroll
+              animateOnce
+              animateIn="animate__fadeInRight">
+              <StaticImage
+                src="../assets/images/worker-lg.png"
+                alt="Worker Avatar"
+                style={{
+                  width: "calc(100% - 20%)",
+                  marginTop: "80px",
+                  marginBottom: "80px",
+                }}
+                placeholder="none"
+                objectFit="contain" />
+            </AnimationOnScroll>
           </div>
       </MediaQuery>
       <MediaQuery
