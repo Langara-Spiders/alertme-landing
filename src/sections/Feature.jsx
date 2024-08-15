@@ -30,9 +30,9 @@ const FeatureSection = () => {
           objectFit="contain" />
       </MediaQuery>
       <MediaQuery maxWidth={breakpoints.md}>
-        <AnimationOnScroll
+        {/* <AnimationOnScroll
           animateOnce
-          animateIn="animate__zoomIn">
+          animateIn="animate__zoomIn"> */}
           <StaticImage
             src="../assets/images/civilian-sm.png"
             alt="User Avatar"
@@ -42,7 +42,7 @@ const FeatureSection = () => {
             }}
             placeholder="none"
             objectFit="contain" />
-        </AnimationOnScroll>
+        {/* </AnimationOnScroll> */}
       </MediaQuery>
       <GradientBox
         paddingTop="64px"
@@ -53,24 +53,20 @@ const FeatureSection = () => {
             id="featuresForCivilians"
             defaultMessage="Features For Civilians"/>
         </BadgeTitle>
-        <AnimationOnScroll
+        {/* <AnimationOnScroll
           animateOnce
-          animateIn="animate__bounceIn">
+          animateIn="animate__bounceIn"> */}
           <SubHeading>
             <FormattedMessage
               id="subHeadingCivilian"
               defaultMessage="Get alerts, report hazards, stay safe." />
           </SubHeading>
-        </AnimationOnScroll>
+        {/* </AnimationOnScroll> */}
         <MediaQuery maxWidth={breakpoints.md}>
           <GridBox>
             {
               featuresListCivilian.map((feature, idx) => (
-                <AnimationOnScroll
-                  animateOnce
-                  animateIn="animate__fadeInUp">
                   <FeatureBox key={idx} {...feature} />
-                </AnimationOnScroll>
               ))
             }
           </GridBox>
@@ -94,9 +90,9 @@ const FeatureSection = () => {
           </div>
         </MediaQuery>
       </GradientBox>
-      <AnimationOnScroll
+      {/* <AnimationOnScroll
         animateOnce
-        animateIn="animate__bounceIn">
+        animateIn="animate__bounceIn"> */}
         <SubHeadingInner>
           <FormattedMessage
             id="subDes"
@@ -106,27 +102,17 @@ const FeatureSection = () => {
               alerts: <Highlight><FormattedMessage id="subDes.alerts" defaultMessage="alerts" /></Highlight>,
               stay: <Highlight><FormattedMessage id="subDes.stay" defaultMessage="stay" /></Highlight>,
               safe: <Highlight><FormattedMessage id="subDes.safe" defaultMessage="safe." /></Highlight>,
-              bellIcon: (
-                <AnimationOnScroll
-                  style={{
-                    display: "inline-block"
-                  }}
-                  delay="2"
-                  animateOnce
-                  animateIn="animate__swing">
-                  🔔
-                </AnimationOnScroll>
-              )
+              bellIcon: "🔔"
             }} />
         </SubHeadingInner>
-      </AnimationOnScroll>
-      <AnimationOnScroll
+      {/* </AnimationOnScroll> */}
+      {/* <AnimationOnScroll
         style={{
           display: "inline-block"
         }}
         delay="5"
         animateOnce
-        animateIn="animate__zoomIn">
+        animateIn="animate__zoomIn"> */}
         <StaticImage
           src="../assets/images/notifications-feature.png"
           alt="Notifications Feature Image"
@@ -138,7 +124,7 @@ const FeatureSection = () => {
           }}
           placeholder="none"
           objectFit="contain" />
-      </AnimationOnScroll>
+      {/* </AnimationOnScroll> */}
       <ColourBox>
         <div
           style={{
@@ -147,9 +133,9 @@ const FeatureSection = () => {
             paddingInline: isLargeDevice ? "160px" : "0",
             justifyContent: "left"
           }}>
-          <AnimationOnScroll
+          {/* <AnimationOnScroll
             animateOnce
-            animateIn="animate__bounceIn">
+            animateIn="animate__bounceIn"> */}
             <SubHeadingInner>
               <FormattedMessage
                 id="subDes"
@@ -158,21 +144,10 @@ const FeatureSection = () => {
                   alertme: <Highlight><FormattedMessage id="subDes.alertme" defaultMessage="AlertMe" /></Highlight>,
                   workers: <Highlight><FormattedMessage id="subDes.workers" defaultMessage="Workers" /></Highlight>,
                   hazards: <Highlight><FormattedMessage id="subDes.hazards" defaultMessage="Hazards" /></Highlight>,
-                  hazardIcon: (
-                    <AnimationOnScroll
-                    style={{
-                      display: "inline-block",
-                    }}
-                    delay="2"
-                    duration="1.5"
-                    animateOnce
-                    animateIn="animate__flash">
-                      ⚠️
-                    </AnimationOnScroll>
-                  )
+                  hazardIcon: "⚠️"
                 }} />
             </SubHeadingInner>
-          </AnimationOnScroll>
+          {/* </AnimationOnScroll> */}
         </div>
         <MediaQuery
           minWidth={breakpoints.md}>
@@ -181,9 +156,9 @@ const FeatureSection = () => {
               textAlign: "right",
               paddingInline: "160px"
             }}>
-            <AnimationOnScroll
+            {/* <AnimationOnScroll
               animateOnce
-              animateIn="animate__fadeInRight">
+              animateIn="animate__fadeInRight"> */}
               <StaticImage
                 src="../assets/images/worker-lg.png"
                 alt="Worker Avatar"
@@ -194,14 +169,14 @@ const FeatureSection = () => {
                 }}
                 placeholder="none"
                 objectFit="contain" />
-            </AnimationOnScroll>
+            {/* </AnimationOnScroll> */}
           </div>
       </MediaQuery>
       <MediaQuery
         maxWidth={breakpoints.md}>
-        <AnimationOnScroll
+        {/* <AnimationOnScroll
           animateOnce
-          animateIn="animate__zoomIn">
+          animateIn="animate__zoomIn"> */}
           <StaticImage
             src="../assets/images/worker-sm.png"
             alt="Worker Avatar"
@@ -212,30 +187,26 @@ const FeatureSection = () => {
             }}
             placeholder="none"
             objectFit="contain" />
-        </AnimationOnScroll>
+        {/* </AnimationOnScroll> */}
       </MediaQuery>
         <BadgeTitle>
           <FormattedMessage
             id="workersFeatures"
             defaultMessage="Features for Construction Workers" />
         </BadgeTitle>
-        <AnimationOnScroll
+        {/* <AnimationOnScroll
           animateOnce
-          animateIn="animate__bounceIn">
+          animateIn="animate__bounceIn"> */}
           <SubHeading>
             <FormattedMessage
               id="subHeadingWorker"
               defaultMessage="Post, Manage, and Resolve Hazards with Real-Time Updates" />
           </SubHeading>
-        </AnimationOnScroll>
+        {/* </AnimationOnScroll> */}
         <GridBox>
           {
             featuresListWorker.map((feature, idx) => (
-              <AnimationOnScroll
-                animateOnce
-                animateIn="animate__fadeInUp">
-                <FeatureBox key={idx} {...feature} />
-              </AnimationOnScroll>
+              <FeatureBox key={idx} {...feature} />
             ))
           }
         </GridBox>

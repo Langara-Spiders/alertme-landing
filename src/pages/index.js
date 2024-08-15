@@ -54,8 +54,8 @@ const IndexPage = () => {
         <Footer>
           <PrimaryBtn bgColor={palette.primaryBtn2}>
             <FormattedMessage
-              id="downloadProposalBtn"
-              defaultMessage="Download Proposal" />
+              id="projectProposalBtn"
+              defaultMessage="Project Proposal" />
           </PrimaryBtn>
           <StaticImage
             src="../assets/images/logo-alt.png"

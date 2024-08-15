@@ -60,15 +60,15 @@ const GridBox = styled.div`
 const TeamSection = () => {
   return (
     <Section id="team">
-      <AnimationOnScroll
+      {/* <AnimationOnScroll
         animateOnce
-        animateIn="animate__swing">
+        animateIn="animate__swing"> */}
         <BadgeTitle>
           <FormattedMessage
             id="ourTeam"
             defaultMessage="Our Team" />
         </BadgeTitle>
-      </AnimationOnScroll>
+      {/* </AnimationOnScroll> */}
       <SubHeading>
         <FormattedMessage
           id="talentsBehind"
@@ -84,11 +84,7 @@ const TeamSection = () => {
       <GridBox>
         {
           teamList.map((teamMember, idx) => (
-            <AnimationOnScroll
-              animateOnce
-              animateIn="animate__zoomIn">
-              <MemberBox key={idx} {...teamMember} />
-            </AnimationOnScroll>
+            <MemberBox key={idx} {...teamMember} />
           ))
         }
       </GridBox>

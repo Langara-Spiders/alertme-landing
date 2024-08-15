@@ -18,7 +18,7 @@ const Button = styled.button`
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
-  z-index: 10;
+  z-index: 100;
   cursor: pointer;
 
   &:hover {

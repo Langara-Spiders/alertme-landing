@@ -25,30 +25,30 @@ const GettingStartedSection = () => {
           }}
           placeholder="none"
           objectFit="contain" />
-        <AnimationOnScroll
+        {/* <AnimationOnScroll
           style={{
             zIndex: 100
           }}
           animateOnce
-          animateIn="animate__swing">
+          animateIn="animate__swing"> */}
           <BadgeTitle>
             <FormattedMessage
               id="gettingStarted"
               defaultMessage="Getting Started" />
           </BadgeTitle>
-        </AnimationOnScroll>
-        <AnimationOnScroll
+        {/* </AnimationOnScroll> */}
+        {/* <AnimationOnScroll
           style={{
             zIndex: 100
           }}
           animateOnce
-          animateIn="animate__bounceIn">
+          animateIn="animate__bounceIn"> */}
           <MainHeading>
             <FormattedMessage
               id="tagine"
               defaultMessage="AlertMe Your Safety Companion" />
           </MainHeading>
-        </AnimationOnScroll>
+        {/* </AnimationOnScroll> */}
         <AnimationOnScroll
           style={{
             zIndex: 100
@@ -57,15 +57,15 @@ const GettingStartedSection = () => {
           animateIn="animate__bounceIn">
           <Button>
             <FormattedMessage
-              id="downloadProposalBtn"
-              defaultMessage="Download Proposal" />
+              id="projectProposalBtn"
+              defaultMessage="Project Proposal" />
           </Button>
         </AnimationOnScroll>
         <ImageBox>
           <MediaQuery maxWidth={breakpoints.lg}>
-          <AnimationOnScroll
+          {/* <AnimationOnScroll
             animateOnce
-            animateIn="animate__fadeInUp">
+            animateIn="animate__fadeInUp"> */}
             <StaticImage
               src="../assets/images/hero-sm.png"
               alt="Hero Image"
@@ -75,12 +75,12 @@ const GettingStartedSection = () => {
               }}
               placeholder="none"
               objectFit="contain" />
-            </AnimationOnScroll>
+            {/* </AnimationOnScroll> */}
           </MediaQuery>
           <MediaQuery minWidth={breakpoints.lg}>
-            <AnimationOnScroll
+            {/* <AnimationOnScroll
               animateOnce
-              animateIn="animate__fadeInUp">
+              animateIn="animate__fadeInUp"> */}
               <StaticImage
                 src="../assets/images/hero-lg.png"
                 alt="Hero Image"
@@ -90,14 +90,14 @@ const GettingStartedSection = () => {
                 }}
                 placeholder="none"
                 objectFit="contain" />
-            </AnimationOnScroll>
+            {/* </AnimationOnScroll> */}
           </MediaQuery>
         </ImageBox>
       </GradientBox>
-      <AnimationOnScroll
+      {/* <AnimationOnScroll
         animateOnce
         duration="1.5"
-        animateIn="animate__fadeInUp">
+        animateIn="animate__fadeInUp"> */}
         <TextBox>
           <MainDes>AlertMe <Highlight>warns</Highlight></MainDes>
           <StaticImage
@@ -120,7 +120,7 @@ const GettingStartedSection = () => {
             />
           </MainDes>
         </TextBox>
-      </AnimationOnScroll>
+      {/* </AnimationOnScroll> */}
     </Section>
   )
 };
